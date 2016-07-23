@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="atc.android.fragmentdinamico.MainActivity">
+
+
+    <Button
+        android:id="@+id/mostrar_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 1"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/mostrar_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 2"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <!--
+        FrameLayout: Éste es el más simple de todos los layouts de Android.
+        Un FrameLayout coloca todos sus controles hijos alineados con su
+        esquina superior izquierda, de forma que cada control quedará oculto
+        por el control siguiente (a menos que éste último tenga transparencia).
+
+        Por ello, suele utilizarse para mostrar un único control en su interior,
+        a modo de contenedor (placeholder) sencillo para un sólo elemento sustituible,
+        por ejemplo una imagen.
+    -->
+    <FrameLayout
+        android:id="@+id/contenedor_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="#f46b45"/>
+</LinearLayout>
