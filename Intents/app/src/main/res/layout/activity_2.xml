@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#648bff"
+    android:orientation="vertical"
+    tools:context="atc.android.explicitintent.Activity2">
+
+    <ImageButton
+        android:id="@+id/feliz"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_happy"
+        android:layout_gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/mi_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JORGE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/nombre_amigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="Mi amigo es "
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"/>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_amigos"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/comprar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_amazon"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/llamar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_llamar"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_email"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageButton
+            android:id="@+id/mapa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_mapa"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

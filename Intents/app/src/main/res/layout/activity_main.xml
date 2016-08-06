@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#648bff"
+    tools:context="atc.android.explicitintent.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir Amigo Invisble"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"/>
+
+    <ImageButton
+        android:id="@+id/elegir_amigo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/regalo"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
