@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Con el valor “single“ indicamos que sólo pueda seleccionarse una de
+         estas tres opciones al mismo tiempo-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Opción 1"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Opción 2"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Opción 3"/>
+    </group>
+</menu>

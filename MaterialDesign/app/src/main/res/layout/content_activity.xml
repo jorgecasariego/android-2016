@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <!--5. En material design todos los elementos estan encimados uno encima de otros pero para distinguir
+           cada uno de los elementos lo que utilizamos es la elevación.
+           Para ello creamos un FrameLayout-->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <!--6. Agregar un floating button-->
+        <!--6.1 Para agregar un floating button es necesario agregar al gradle la librería de soporte
+                de diseño-->
+        <!--6.2 Agregamos un margin-->
+        <!--6.3 Agregamos un icono-->
+        <!--6.4 Agremamos una elevación, un tamaño y un borde-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/margin_floating_button"
+            android:layout_marginBottom="@dimen/margin_floating_button"
+            android:src="@android:drawable/ic_menu_edit"
+            app:elevation="@dimen/elevation_button"
+            app:fabSize="normal"
+            app:borderWidth="0dp"/>
+    </FrameLayout>
+</LinearLayout>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--3.  Creamos nuestro propio Toolbar-->
+<!--3.1  Para la altura utilizaremos un atributo de Android llamado ActionBarSize-->
+<!--3.2  Agregamos un color de background: color primario-->
+<!--3.3. Agregamos una elevación para el AppBar a partir de la guía de Google. https://material.google.com/what-is-material/elevation-shadows.html#elevation-shadows-elevation-android-->
+<!--     Color 4dp en duro aquí es una mala practica por lo que utilizaremos el archivo dimen
+         para cargar el valor-->
+<!--3.4  Para no tener que estar copiando y pegando este Toolbar en todos mis activities entonces
+         lo que haremos es crear un nuevo layout llamado "toolbar.xml" -->
+<android.support.v7.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevation_toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+</android.support.v7.widget.Toolbar>
