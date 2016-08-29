@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_alerta"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Dialogo de Alerta" />
+        <item
+            android:id="@+id/nav_dialog_personalizado"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Dialogo Personalizado" />
+        <item
+            android:id="@+id/time_picker"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Time Picker" />
+        <item
+            android:id="@+id/date_picker"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Date Picker" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_context_menu"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Context Menu" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
