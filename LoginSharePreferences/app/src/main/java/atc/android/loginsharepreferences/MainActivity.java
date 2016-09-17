@@ -61,6 +61,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    // Paso 4: Guardamos los datos
+    private void guardarDatos() {
+        editor.putString(NOMBRE, nombre.getText().toString().trim());
+        editor.putString(PASSWORD, password.getText().toString().trim());
+        editor.commit();
+
+        limpiarFormulario();
+
+        Toast.makeText(MainActivity.this, "Usuario guardado correctamente", Toast.LENGTH_SHORT).show();
+
+    }
+
     // Paso 5: Obtenemos los datos guardados y comparamos con lo que ingresa el usuario
     private void iniciarSesion() {
         String nombreGuardado = preferencias.getString(NOMBRE, "");
@@ -77,20 +89,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    // Paso 4: Guardamos los datos
-    private void guardarDatos() {
-        editor.putString(NOMBRE, nombre.getText().toString().trim());
-        editor.putString(PASSWORD, password.getText().toString().trim());
-        editor.commit();
 
-        limpiarFormulario();
-
-        Toast.makeText(MainActivity.this, "Usuario guardado correctamente", Toast.LENGTH_SHORT).show();
-
-    }
 
     private void limpiarFormulario() {
         nombre.setText("");
         password.setText("");
-    }   q
+    }
 }

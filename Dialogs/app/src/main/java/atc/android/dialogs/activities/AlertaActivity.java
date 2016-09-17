@@ -39,7 +39,6 @@ public class AlertaActivity extends AppCompatActivity implements View.OnClickLis
         // Cremos el mensaje y el titulo
         builder.setMessage("¿Fue posible crear la alerta?")
                 .setTitle("Android ATC");
-new
         // Ejecutar Aplicacion
 
         // Agregamos un boton
